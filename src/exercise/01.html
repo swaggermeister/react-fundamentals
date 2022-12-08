@@ -6,7 +6,18 @@
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
 <!--   📜 https://github.com/mdn/js-examples/tree/master/module-examples -->
-
+<body>
+  <div id="root"></div>
+  <script type="module">
+    // 🐨 create a div
+    const div = document.createElement('div')
+    // 🐨 set the div's textContent to 'Hello World' and className to 'container'
+    div.textContent = 'Hello World'
+    div.className = 'container'
+    // 🐨 append the div to the root div using `append`
+    document.getElementById('root').append(div)
+  </script>
+</body>
 <!-- These next instructions are to be written in JavaScript in the <script> tag -->
 <!-- 🐨 Create a div -->
 <!--   💰 document.createElement('div') -->
